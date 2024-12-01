@@ -1,0 +1,136 @@
+.skillslogo {
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px #ffffff;
+    padding-left: 2%;
+    font-size: 16px;
+}
+
+/* Background styles for the body */
+body {
+    background-image: url("img_tree.gif"), url("paper.gif");
+    background-repeat: no-repeat, repeat;
+    background-size: cover, auto; /* Ensure the background adjusts properly */
+}
+
+/* Section styling */
+section {
+    margin-top: 4%;
+    font-size: 18px;
+    padding-left: 25%;
+    padding-right: 20%;
+}
+
+/* Heading styling */
+.heading {
+    font-size: 45px;
+    line-height: 0.7;
+}
+
+/* Proficiency section */
+.proficiency {
+    padding-left: 25%;
+    padding-right: 45%;
+    font-size: 18px;
+    line-height: 1.5; /* Adjusted for better readability */
+}
+
+.propy {
+    font-size: 45px;
+    line-height: 0.7;
+}
+
+/* Skill bar container */
+.container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+}
+
+/* Skill bar styles */
+.skills {
+    text-align: right;
+    padding: 10px 0;
+    border-radius: 25px;
+    border: 2px solid;
+}
+
+/* Individual skill bar colors */
+.html {
+    width: 90%;
+    background-color: #ee8c3c;
+    border: 2px solid #ee8c3c;
+}
+
+.css {
+    width: 80%;
+    background-color: #2196F3;
+    border: 2px solid #2196F3;
+}
+
+.js {
+    width: 65%;
+    background-color: #66ff48;
+    border: 2px solid #66ff48;
+}
+
+/* Add responsiveness with media queries */
+@media screen and (max-width: 1024px) {
+    section {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .proficiency {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .heading, .propy {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .skillslogo {
+        font-size: 14px;
+    }
+
+    .heading, .propy {
+        font-size: 28px;
+    }
+
+    .proficiency {
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 16px;
+    }
+
+    .skills {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skillslogo {
+        font-size: 12px;
+    }
+
+    .heading, .propy {
+        font-size: 24px;
+    }
+
+    .proficiency {
+        font-size: 14px;
+    }
+
+    .skills {
+        font-size: 12px;
+    }
+}

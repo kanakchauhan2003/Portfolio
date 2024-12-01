@@ -1,0 +1,97 @@
+body {
+  background-image: url("img_tree.gif"), url("paper.gif");
+  background-repeat: no-repeat, repeat;
+  background-size: cover, auto; /* Ensure the background adapts */
+}
+
+/* Logo styling */
+.Projectslogo {
+  font-family: sans-serif;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px #ffffff;
+  padding-left: 2%;
+  font-size: 16px;
+}
+
+/* Image styling */
+img {
+  float: right;
+  border-style: solid;
+  margin-top: 10%;
+  max-width: 100%; /* Ensure images scale with screen size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Paragraph styling */
+p {
+  text-align: left;
+}
+
+/* Section styling */
+section {
+  font-size: 18px;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-top: 4%;
+}
+
+/* Image with class img2 */
+.img2 {
+  border-color: #ffffff;
+  margin-top: 5%;
+  border-style: solid;
+  max-width: 100%; /* Responsive scaling */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+  .Projectslogo {
+      font-size: 14px; /* Adjust logo font size */
+  }
+
+  section {
+      padding-left: 10%;
+      padding-right: 10%;
+      font-size: 16px; /* Reduce text size slightly */
+  }
+
+  img, .img2 {
+      margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Projectslogo {
+      font-size: 12px; /* Smaller font size for the logo */
+      padding-left: 1%; /* Reduce padding */
+  }
+
+  section {
+      padding-left: 5%;
+      padding-right: 5%;
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  img, .img2 {
+      float: none; /* Stack images vertically */
+      margin: 0 auto; /* Center-align the images */
+      display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Projectslogo {
+      font-size: 10px; /* Minimal font size for very small screens */
+  }
+
+  section {
+      padding-left: 3%;
+      padding-right: 3%;
+      font-size: 12px; /* Adjust text size for mobile devices */
+  }
+
+  img, .img2 {
+      margin-top: 2%; /* Reduce spacing */
+  }
+}
